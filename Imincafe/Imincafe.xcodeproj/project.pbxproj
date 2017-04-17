@@ -13,9 +13,12 @@
 		B0DB9CB31EA46AF7006CA70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DB9CB11EA46AF7006CA70E /* Main.storyboard */; };
 		B0DB9CB51EA46AF7006CA70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DB9CB41EA46AF7006CA70E /* Assets.xcassets */; };
 		B0DB9CB81EA46AF7006CA70E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DB9CB61EA46AF7006CA70E /* LaunchScreen.storyboard */; };
+		F1A72A8468102D6A47557584 /* libPods-Imincafe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 462C38F1FD5E7C0FA3FEDAC1 /* libPods-Imincafe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		462C38F1FD5E7C0FA3FEDAC1 /* libPods-Imincafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Imincafe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB9DA6F0049AB082AAC398F /* Pods-Imincafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imincafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imincafe/Pods-Imincafe.release.xcconfig"; sourceTree = "<group>"; };
 		B0DB9CA51EA46AF7006CA70E /* Imincafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imincafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DB9CA91EA46AF7006CA70E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0DB9CAB1EA46AF7006CA70E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		B0DB9CB41EA46AF7006CA70E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0DB9CB71EA46AF7006CA70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DB9CB91EA46AF7006CA70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE31F38180276D2B8143E526 /* Pods-Imincafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imincafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Imincafe/Pods-Imincafe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A72A8468102D6A47557584 /* libPods-Imincafe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02FD0D3446EA34AF4607E704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				462C38F1FD5E7C0FA3FEDAC1 /* libPods-Imincafe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0DB9C9C1EA46AF7006CA70E = {
 			isa = PBXGroup;
 			children = (
 				B0DB9CA71EA46AF7006CA70E /* Imincafe */,
 				B0DB9CA61EA46AF7006CA70E /* Products */,
+				F437455024469250DA41FFE1 /* Pods */,
+				02FD0D3446EA34AF4607E704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F437455024469250DA41FFE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE31F38180276D2B8143E526 /* Pods-Imincafe.debug.xcconfig */,
+				7EB9DA6F0049AB082AAC398F /* Pods-Imincafe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0DB9CBC1EA46AF7006CA70E /* Build configuration list for PBXNativeTarget "Imincafe" */;
 			buildPhases = (
+				4CD2949BA359826F3660199D /* [CP] Check Pods Manifest.lock */,
 				B0DB9CA11EA46AF7006CA70E /* Sources */,
 				B0DB9CA21EA46AF7006CA70E /* Frameworks */,
 				B0DB9CA31EA46AF7006CA70E /* Resources */,
+				D74343D046BF0E4DE866950B /* [CP] Embed Pods Frameworks */,
+				D4484DFE8F2844CFDD804F76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CD2949BA359826F3660199D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4484DFE8F2844CFDD804F76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imincafe/Pods-Imincafe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74343D046BF0E4DE866950B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imincafe/Pods-Imincafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0DB9CA11EA46AF7006CA70E /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		B0DB9CBD1EA46AF7006CA70E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE31F38180276D2B8143E526 /* Pods-Imincafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Imincafe/Info.plist;
@@ -279,6 +355,7 @@
 		};
 		B0DB9CBE1EA46AF7006CA70E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB9DA6F0049AB082AAC398F /* Pods-Imincafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Imincafe/Info.plist;
